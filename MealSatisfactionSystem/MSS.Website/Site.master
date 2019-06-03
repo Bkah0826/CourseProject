@@ -1,0 +1,209 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<%@ Register Src="~/UserControls/MessageUserControl.ascx" TagPrefix="uc1" TagName="MessageUserControl" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Meal Satisfaction Survey</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="Images/Covenant_Health_Logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*This is the standard for all pages*/
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px 10px 0 10px;
+            z-index:100;
+            background-color: #244090;
+            color: #fff;
+        }
+
+        .body-content {
+            background-color: #fff;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif !important;
+        }
+
+        /*Nav bar*/
+        .navbar {
+            background-color: #244090;
+            border-color: #244090;
+        }
+
+        .navbar-inverse .navbar-nav > li > a,
+        .navbar-inverse .navbar-brand,
+        .navbar-inverse .navbar-nav > .open > .dropdown,
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-nav > .open > a,
+        .navbar-inverse .navbar-nav > .open > a:hover,
+        .navbar-inverse .navbar-nav > .open > a:focus {
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-nav > .open > a,
+        .navbar-inverse .navbar-nav > .open > a:hover,
+        .navbar-inverse .navbar-nav > .open > a:focus,
+        .navbar-inverse .navbar-nav > li > a:hover,
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus,
+        .dropdown-menu {
+            background-color: #193179;
+        }
+
+        #navLogo {
+            height: 41px;
+            float: left;
+            margin: -10px 0 0 -10px;
+        }
+
+        .navbar-inverse .navbar-toggle,
+        .navbar-inverse .navbar-toggle:hover,
+        .navbar-inverse .navbar-toggle:focus {
+            border-color: #244090;
+        }
+
+        /*Nav bar dropdown menus*/
+        .dropdown-menu {
+            border: 1px solid #193179;
+        }
+        .dropdown-menu > li > a {
+            color:#c4c4c4;
+        }
+        .dropdown-menu > li > a:hover {
+            color:#fff;
+            background-color: #102464;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-inverse .navbar-nav .open .dropdown-menu {
+                background-color: #193179;
+            }
+            .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+                color: #a9a9a9;
+            }
+            .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+                background-color: #102464;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <style>
+        </style>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" runat="server" href="https://www.covenanthealth.ca/" target="_blank">
+                        <span class="sr-only">Open Covenant Health's Website in a new browser tab</span>
+                        <asp:Image ID="navLogo" runat="server" ImageUrl="~/Images/Covenant-Health-Logo-White.png" AlternateText="Open Covenant Health's Website in a new browser tab"/>
+                    </a>
+                </div>
+                <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                    <AnonymousTemplate>
+                        <div class="collapse navbar-collapse" id="navMenu">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/Survey/Survey.aspx"><span class="fa fa-list-alt fa-pencil"></span>&ensp;Take Survey</a></li>
+                            </ul>
+                        </div>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <div class="collapse navbar-collapse" id="navMenu">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/Admin/Home.aspx"><span class="fa fa-home"></span>&ensp;Home</a></li>
+                                <% if (Page.User.IsInRole("SuperUser") || Page.User.IsInRole("AdminEdit"))
+                                            {%>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-wrench"></span>&ensp;Management <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <% if (Page.User.IsInRole("SuperUser")) { %>
+                                            <li><a href="/Admin/ManageSites.aspx" ><span class="fa fa-sitemap"></span>&ensp;Manage Sites</a></li>
+                                            <li><a href="/Admin/ManageSurveyText.aspx"><span class="fa fa-edit"></span>&ensp;Manage Survey Text</a></li> 
+                                            <li><a href="/Admin/ManageUnits.aspx"><span class="fa fa-cube"></span>&ensp;Manage Units</a></li>
+                                            <li><a href="/Admin/Security/UserRoleAdmin.aspx"><span class="fa fa-users"></span>&ensp;Manage Users</a></li>
+                                        <%}%>
+                                        <% else { %>
+                                            <li><a href="/Admin/ManageUnits.aspx"><span class="fa fa-cube"></span>&ensp;Manage Units</a></li>
+                                            <li><a href="/Admin/Security/UserRoleAdmin.aspx"><span class="fa fa-users"></span>&ensp;Manage Users</a></li>
+                                        <%}%>
+                                    </ul>
+                                </li>
+                                <% } %>
+                                <li><a href="/Admin/ViewReports.aspx"><span class="fa fa-pie-chart"></span>&ensp;Reports</a></li>
+                                <li><a href="/Admin/ViewResponses.aspx"><span class="fa fa-comments"></span>&ensp;Surveys</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-user"></span>&ensp;<%: Context.User.Identity.GetUserName()  %> <span class="caret"></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Account/Manage.aspx"><span class="fa fa-cog"></span>&ensp;Manage Your Account</a></li>
+                                        <li><a href="/Account/Help.aspx"><span class="fa fa-question-circle"></span>&ensp;Help Manual</a></li>
+                                        <li>
+                                            <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText='<span class="fa fa-sign-out"></span>&ensp;Log Off' LogoutPageUrl="~/Account/LogIn.aspx" OnLoggingOut="Unnamed_LoggingOut" ID="LogoutButton" />
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+        </nav>
+        <div>
+            <div class="container body-content ContentDiv">
+                <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
+                <asp:ContentPlaceHolder ID="SiteAccess" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="AdminLogin" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer>
+                <p>Leeroy Solutions - <%: DateTime.Now.Year %></p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

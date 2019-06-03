@@ -1,0 +1,283 @@
+﻿/*#region Content outside the tabs styles*/
+.body-content {
+    background-color: #fff;
+}
+
+.jumbotron {
+    background-color: #D9EDF6;
+    min-width: 800px;
+}
+
+/*#endregion */
+
+/*#region All tabs styles*/
+.nav-tabs {
+    padding-top: 2%;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    min-width: 800px;
+}
+
+.tab-content {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    min-width: 800px;
+}
+
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a:focus {
+    border-bottom-color: #fff;
+}
+
+label {
+    font-weight: normal !important;
+}
+/*#endregion */
+
+/*#region General ListView styles*/
+.ListView {
+    margin-top: 8px;
+}
+
+    .ListView th {
+        background-color: #468CC8;
+        height: 35px;
+        color: white;
+    }
+
+.listViewBox {
+    background-color: #fff;
+    border: 1px solid white;
+    max-width: none;
+}
+
+
+.ListView tr .btn-primary {
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nextprev {
+    width: 80px !important;
+}
+
+.footer-buttons {
+    width: 35px;
+}
+
+.numeric-footer-buttons {
+    background-color: #a2c5e3;
+    border: 1px solid #a2c5e3;
+    border-radius: 2px;
+}
+
+    .numeric-footer-buttons:hover {
+        border: none;
+        background-color: #3870a0;
+    }
+
+.footerBar {
+    height: 35px;
+}
+/*#endregion */
+
+/*#region Search Bar Styles*/
+.scroll {
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.searchBar {
+    float: left;
+    margin-left: 20px;
+    padding-right: 5px;
+    font-weight: 300 !important;
+}
+
+.width-control {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 200px;
+}
+
+.section {
+    margin-top: 10px;
+}
+
+.searchBarSection {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.searchBarDateSection {
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 73px;
+}
+
+.checkboxSection {
+    margin-top: 20px;
+}
+
+.checkboxItem {
+    margin: 0px;
+    font-weight: normal !important;
+}
+
+    .checkboxItem input {
+        padding-left: 5px;
+    }
+
+    .checkboxItem label {
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+.checkboxList {
+    padding-left: 1px;
+}
+
+/*#endregion */
+
+/*Start of responsive elements (All inside listview)*/
+/*#region Responsive */
+
+input {
+    width: unset;
+}
+
+.site {
+    width: 140px;
+    word-break: break-word;
+}
+
+.unit {
+    width: 60px;
+    text-align: center;
+}
+
+.date {
+    width: 110px;
+}
+
+.gender {
+    width: 125px;
+}
+
+.age {
+    width: 85px;
+}
+
+.action {
+    width: 48px;
+}
+
+.no-response {
+    width: 400px;
+    text-align: left !important;
+    font-size: 48px;
+}
+
+.panel {
+    width: 560px;
+}
+
+@media only screen and (min-width:1000px) {
+    .site {
+        width: 180px;
+        padding-left: 10px;
+    }
+
+    .unit {
+        width: 110px;
+        text-align: center;
+    }
+
+    .date {
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .gender {
+        width: 150px;
+        padding-left: 10px;
+    }
+
+    .age {
+        width: 110px;
+        padding-left: 10px;
+    }
+
+    .action {
+        width: 48px;
+    }
+
+    .no-response {
+        width: 600px;
+        text-align: left !important;
+        font-size: 48px;
+    }
+
+    .panel {
+        width: 750px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .site {
+        width: 240px;
+        padding-left: 10px;
+    }
+
+    .unit {
+        width: 120px;
+        text-align: center;
+    }
+
+    .date {
+        width: 155px;
+        padding-left: 10px;
+    }
+
+    .gender {
+        width: 160px;
+        padding-left: 10px;
+    }
+
+    .age {
+        width: 130px;
+        padding-left: 10px;
+    }
+
+    .action {
+        width: 48px;
+    }
+
+    .no-response {
+        width: 800px;
+        text-align: left !important;
+        font-size: 48px;
+    }
+
+    .panel {
+        width: 860px;
+    }
+    /*#endregion */
+}

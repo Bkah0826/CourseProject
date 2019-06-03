@@ -1,0 +1,5 @@
+C:\Users\atrninkov1\Documents\GitHub\MealSatisfactionSystem\MealSatisfactionSystem\Docs
+
+https://www.techrepublic.com/blog/five-apps/five-documentation-apps-for-net-developers/
+
+Nuget Package: PxtlCa.XmlCommentMarkDownGenerator

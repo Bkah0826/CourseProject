@@ -1,0 +1,417 @@
+﻿
+/*#region Content outside the tabs styles*/
+.body-content {
+    background-color: #fff;
+}
+/*#endregion */
+
+/*#region All tabs styles*/
+.nav-tabs {
+    padding-top: 2%;
+    width: 100%;
+    margin: 0;
+    background-color: transparent;
+    min-width: 800px;
+}
+
+.tab-content {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    min-width: 800px;
+}
+
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a:focus {
+    border-bottom-color: #fff;
+}
+/*#endregion */
+
+/*#region General ListView styles*/
+.ListView th {
+    background-color: #468CC8;
+    height: 35px;
+    color: white;
+}
+
+.ListView tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.listViewBox {
+    background-color: #fff;
+    border: 1px solid white;
+    max-width: none;
+    height: 23px;
+}
+
+.edit {
+}
+
+.ListView tr .btn-primary,
+.ListView tr .btn-danger,
+.ListView tr .btn-success {
+    border: none;
+    margin: 0;
+    width: 80px;
+}
+
+
+.footer-buttons {
+    width: 35px !important;
+}
+
+.nextprev {
+    width: 80px !important;
+}
+
+.footerBar {
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.hideDDL {
+    border: none;
+    background-color: transparent;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.dbl-wide-btn {
+    width: 165px !important;
+}
+/*#endregion */
+
+/*#region Search Bar Styles*/
+.searchBar {
+    float: left;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+.form-control {
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.searchBar .btn {
+    width: 73px;
+}
+
+.searchBar label {
+    font-weight: unset;
+}
+
+.title-label {
+    font-weight: bold;
+}
+
+.searchBar input:disabled {
+    width: 73px;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.radioButtonList input {
+    margin-top: 5px;
+}
+
+.radioButtonList label {
+    margin-left: 10px !important;
+    margin-top: 10px !important;
+}
+/*#endregion */
+
+/*#region Add tab styles*/
+.add-table .btn-danger {
+    margin-left: 5px;
+}
+
+.add-table td {
+    padding-top: 10px;
+}
+
+.add-label {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.addBar {
+    float: left;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    margin-right: 20px;
+}
+/*#endregion */
+
+/*#region Popup styles */
+.deactivate-popup {
+    width: 800px;
+    background-color: white;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.deactivate-popup-header {
+    background-color: #468CC8;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+    .deactivate-popup-header h3 {
+        margin: 0;
+    }
+
+.deactivate-popup-body {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.shadow {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/*#endregion */
+
+/*Start of responsive elements (All inside listview)*/
+/*#region Responsive */
+.description {
+    width: 180px;
+}
+
+.passcode {
+    width: 75px;
+}
+
+.siteName {
+    width: 140px;
+}
+
+.inactiveDescription {
+    width: 260px;
+}
+
+.inactivePasscode {
+    width: 120px;
+}
+
+.inactiveSiteName {
+    width: 180px;
+}
+
+.addTabDescription {
+    width: 250px;
+}
+
+.addTabPasscode {
+    width: 110px;
+}
+
+.addTabSiteName {
+    width: 150px;
+}
+
+.add-table .form-control {
+    width: 200px;
+}
+
+.multi {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100px;
+    max-height: 100px;
+}
+
+.add-table .btn {
+    width: 95px;
+}
+
+.ManageUsersListView th {
+    background-color: #468CC8;
+    height: 35px;
+    color: white;
+    width: 30px;
+}
+
+.ManageUsersListView td {
+    width: 267px;
+}
+
+.question {
+    width: 560px;
+}
+
+.subquestion {
+    width: 600px;
+}
+
+.answer {
+    width: 600px;
+}
+
+
+@media only screen and (min-width:1000px) {
+    .description {
+        width: 270px;
+    }
+
+    .passcode {
+        width: 125px;
+    }
+
+    .siteName {
+        width: 200px;
+    }
+
+    .inactiveDescription {
+        width: 340px;
+    }
+
+    .inactivePasscode {
+        width: 150px;
+    }
+
+    .inactiveSiteName {
+        width: 270px;
+    }
+
+    .addTabDescription {
+        width: 320px;
+    }
+
+    .addTabPasscode {
+        width: 130px;
+    }
+
+    .addTabSiteName {
+        width: 210px;
+    }
+
+    .add-table .form-control {
+        width: 250px;
+    }
+
+    .multi {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .add-table .btn {
+        width: 120px;
+    }
+
+    .ManageUsersListView th {
+        background-color: #468CC8;
+        height: 35px;
+        color: white;
+        width: 60px;
+    }
+
+
+    .ManageUsersListView td {
+        width: 533px;
+    }
+
+    .question {
+        width: 760px;
+    }
+
+    .subquestion {
+        width: 800px;
+    }
+
+    .answer {
+        width: 800px;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .description {
+        width: 350px;
+    }
+
+    .passcode {
+        width: 160px;
+    }
+
+    .siteName {
+        width: 285px;
+    }
+
+    .inactiveDescription {
+        width: 460px;
+    }
+
+    .inactivePasscode {
+        width: 180px;
+    }
+
+    .inactiveSiteName {
+        width: 320px;
+    }
+
+    .addTabDescription {
+        width: 420px;
+    }
+
+    .addTabPasscode {
+        width: 150px;
+    }
+
+    .addTabSiteName {
+        width: 290px;
+    }
+
+    .add-table .form-control {
+        width: 250px;
+    }
+
+    .multi {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .add-table .btn {
+        width: 120px;
+    }
+
+    .ManageUsersListView th {
+        background-color: #468CC8;
+        height: 35px;
+        color: white;
+        width: 90px;
+    }
+
+
+    .ManageUsersListView td {
+        width: 800px;
+    }
+
+    .question {
+        width: 960px;
+    }
+
+    .subquestion {
+        width: 1000px;
+    }
+
+    .answer {
+        width: 1000px;
+    }
+    /*#endregion */
+}

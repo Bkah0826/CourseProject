@@ -1,0 +1,61 @@
+﻿Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...Please check the SqlServer script.
+File: C:\Users\kimbe\Documents\DMIT-CSD Notes\Capstone\MealSatisfactionSystem\MealSatisfactionSystem\MSS.Website\Scripts\dbscript.sql 
+Line: 2 
+Error: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_dbo.Unit_dbo.Site_SiteId". The conflict occurred in database "Survey", table "dbo.Site", column 'SiteId'.
+The statement has been terminated. 
+SQL Command: 
+
+INSERT INTO [dbo].[Unit]
+           ([SiteId], [UnitName],[Description],[Disabled])
+     VALUES ( ...
+...SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.SQL Script import concluded.

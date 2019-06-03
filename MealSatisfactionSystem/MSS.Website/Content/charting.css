@@ -1,0 +1,365 @@
+﻿html {
+    min-width: 1184px;
+}
+
+.hidden{
+    display:none
+}
+
+h5{
+    margin-top: 5px;
+    font-weight:bold;
+}
+
+.error-msg{
+    color: red;
+    width:85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#params-errormsg{
+    width: 45%;
+    bottom:0;
+}
+
+#pieChartPagingGroup{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#pieChartPagingGroup i{
+    margin: 0 5px;
+    display: inline;
+}
+#pieChartPagingGroup p{
+    display: inline;
+}
+
+
+#chartHeaderGroup{
+    width:100%;
+}
+
+i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+#filters{
+    white-space: pre-line
+}
+
+.card{
+    width: 100%;
+    padding: 10px;
+}
+
+#leftParameterContainer{
+    width: 30%
+}
+
+.rightParameterContainer{
+    width: 70%;
+    display: block;
+}
+
+#genderParameterSection{
+    width: 60%;
+    margin: 5px;
+}
+
+#ageParameterSection{
+    width: 40%;
+}
+
+#parameterSection>label{
+    width: 100%;
+    display: block;
+}
+
+/***/
+
+#unitDBParameters{
+    overflow: scroll;
+    height: 125px;
+}
+
+#unitDBParameters label{
+    /*display: block;*/
+    margin-right: 5%;
+    width: 20%;
+}
+
+input[type="checkbox"]{
+    margin-right: 5px;
+}
+
+#dbParameters{
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+#dbParameters>label{
+    width:45%;
+}
+#dbParameters>input{
+    margin-right: 2px;
+}
+
+#dateSection > p{
+    width: 70%;    
+    text-align: right;
+}
+
+#dateSection > p > input{
+    direction: ltr;
+    width: 150px;
+    
+}
+
+#dateSection > p > i{    
+    direction: rtl;
+    margin-left: 5px;
+}
+
+#datePresets > a:hover{
+    text-decoration: none;
+}
+
+#datePresets{
+    padding-bottom:10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+#clearParameterFilters{
+    margin-bottom:10px;
+}
+
+.print.btn{
+    width: 25%;
+}
+
+.print.btn> button{
+    width: 100%;
+}
+
+#chartBody{
+    height: 93%;
+}
+
+#chartFooterGroup>div{
+    display: flex;
+    width: 75%;
+}
+
+.btn-group{
+    margin: 0 auto;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.breadcrumb{
+    border-bottom: 1px solid  #e3e3e3;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 0;
+}
+
+#chartBody>div>img{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.loader {
+    border: 6px solid #f3f3f3; /* Light grey */
+    border-top: 6px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 5px 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#chartBody .loader{
+    margin: 0 auto;
+}
+#chartBody canvas{
+    margin-top: 10px;
+}
+
+.print-btn{
+    display: flex;
+}
+
+.saved{
+    color:#548054;
+    margin: 5px 15px;
+}
+
+#unitDBParameters input[type="checkbox"]:nth-of-type(2){
+    margin-left: -3px;
+}
+
+label{
+    font-weight:lighter;
+}
+
+.heading{
+    width: 98%;
+    border-bottom: 1px solid #ddd;
+    margin : 0 10px;
+}
+
+/* Tabs- overriding default styles*/
+
+#tabs > ul {
+    background: none;
+    border: none;
+}
+
+#tabs {
+    border: none;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 0 !important;
+}
+
+ul .ui-state-default:not(.ui-state-active) {
+    border: none !important;
+    background: none !important;
+}
+.ui-state-default a {
+    color: #333 !important;
+}
+
+.ui-state-active {
+    border: 1px solid #e3e3e3!important;
+    border-bottom: none!important;
+    background: #f5f5f5!important;
+}
+.ui-state-active a {
+    color: #333 !important;
+}
+
+ul:first-child{
+    margin-left:-3px!important;
+}
+
+.ui-tabs-anchor:active, .ui-tabs-anchor:focus {
+    outline: none;
+}
+
+​
+/*
+    Percentile
+*/
+.containers {
+    position: relative;
+    text-align: center;
+}
+
+.col-md-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*width: 20%;*/
+}
+.row{
+    display:inline-flex;  
+    margin: 10px;
+}
+
+.row h3{
+    font-size: 19px;
+    height: 40px;
+}
+
+#dateSection_p{
+    width:89%;
+}
+
+#dateSection_p > p {
+    width: 70%;
+    text-align: right;
+}
+
+#dateSection_p > p > input {
+    direction: ltr;
+    width: 150px;
+}
+
+#dateSection_p > p > i {
+    direction: rtl;
+    margin-left: 5px;
+}
+
+#datePresets_p > a:hover {
+    text-decoration: none;
+}
+
+/*#datePresets_p {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}*/
+
+.weightedDateContainer {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 15px;
+
+}
+
+.weightedDateContainer> div {
+    width: 30%;
+}
+
+#weightedHead {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#weightedContainer{
+    text-align: center;
+    margin-top: 25px;
+}
+
+#download_p{
+    margin-left: 15px;
+}
+
+#percentileTab > div > div.weightedDateContainer > div:nth-child(2) > h5{
+    font-weight:normal;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.download_p {
+    display: flex;
+}
+
+/*.\.download_p > div:nth-child(2),*/ 
+
+.\.download_p > p{
+    display:inline;
+    margin: 10px 15px;
+}

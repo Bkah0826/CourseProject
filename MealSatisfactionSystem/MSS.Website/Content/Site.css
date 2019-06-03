@@ -1,0 +1,464 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+    .SurveyAccess .survey-popup-body input
+    {
+    min-width: 50%;
+    display:block;
+    margin: 0 auto;
+    }
+
+}
+/*Survey Portal CSS*/
+.SurveyPortal 
+{
+    background: #fefefe;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif !important;
+}
+.SurveyPortal .jumbotron 
+{
+  width: 100%;
+  text-align: left;
+}
+.SurveyPortal .jumbotron .text
+{
+    display:block;
+    margin: 0 auto;
+    width: 95%;
+}
+    .SurveyPortal .jumbotron img
+    {
+        padding:15px;
+    }
+    .SurveyPortal .jumbotron a
+    {
+        padding: 0 ;
+    }
+    .SurveyPortal .jumbotron h1
+    {
+        text-align: left;
+    }
+    .SurveyPortal .container > .container
+     {
+        background-color: white;
+        padding: 5%;
+    }
+    .SurveyPortal .panel
+    {
+        overflow-wrap:break-word;
+    }
+    .SurveyPortal footer
+     {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        padding-top: 10px;
+        padding-left: 20px;
+        border-top: 1px solid #ddd;
+    }
+/*Survey Popup Start*/
+   .SurveyPortal .survey-popup {
+    width: 50%;
+    background-color: white;
+    font-family: 'Raleway', sans-serif !important;
+    text-align:left;
+    margin: 0 auto;
+}
+
+.SurveyPortal .survey-popup-header {
+    background-color: #468CC8;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+  .SurveyPortal  .survey-popup-header h3 {
+        margin: 0;
+    }
+
+ .SurveyPortal .survey-popup-body {
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    clear:both;
+}
+
+.SurveyPortal .shadow {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.popup-section
+{
+    float:left;
+    width:45%;
+    padding-bottom:15px;
+    overflow: auto;
+}
+
+.popup-section:first-child
+{
+    padding-left:5%;
+    padding-right: 5%;
+}
+.popup-section figure
+{
+    overflow-wrap:inherit;
+}
+.popup-section img
+{
+    width:100%;
+    padding-bottom: 15px;
+}
+/*End Survey Pop up Csss*/
+@media screen and (max-width:1257px)
+{
+    .SurveyAccess .survey-popup-body
+    {   
+        overflow-y:scroll;
+        overflow-x:hidden;
+        height:300px;
+    }
+    .SurveyAccess .popup-section
+    {
+        width: 100%;
+        float:none;
+        display:inline-block;
+    }
+    .SurveyAccess .popup-section img
+    {
+        padding-bottom: 10%;
+    }
+    .SurveyAccess .survey-popup-body input
+    {
+    min-width: 100%;
+    display:block;
+    margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px)
+{
+    .SurveyPortal .survey-popup
+    {
+        width:100%;
+    }
+}
+/*Survey Access Css*/
+.SurveyAccess
+{
+    padding-bottom: 9em;
+}
+.SurveyAccess .survey-popup-body
+{
+    margin: 0 auto;
+}
+
+.SurveyAccess input 
+{
+    min-width: 100%;
+}
+
+.SurveyAccess .button
+{
+    margin: 0 auto;
+}
+#SurveyAccess_SurveyPanel 
+{
+    text-align: center;
+}
+
+#SurveyAccess_NeedHelpButton 
+{
+    text-align: left;
+    padding: 0;
+    padding-top: 15px;
+}
+
+/*Take Survey Page*/
+.ProfileContent select
+{
+    min-width: 100%;
+    
+}
+.TakeSurvey .survey-popup-body
+{
+    margin: 0 auto;
+    text-align: center;
+}
+/*End Survey portion CSS*/
+
+/*Admin Login Styling*/
+#AdminLogin_Logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.loginbutton,
+.cancelbutton {
+    display: inline;
+}
+
+.loginbutton {
+    float: right;
+}
+
+.cancelbutton {
+    float: left;
+}
+
+.login-buttons {
+    clear: both;
+}
+
+#AdminLogin_UserName {
+    display: inline;
+}
+
+#AdminLogin_Password {
+    display: inline;
+}
+
+.container div {
+    clear: none !important;
+}
+
+.loginDetail {
+    float: right;
+}
+
+
+.loginImage {
+    margin-left: 20%;
+}
+
+.loginText {
+    margin-left: 50%!important;
+}
+
+/*ManageUsersStyle*/
+
+.rounded_corners {
+    border: 1px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+    .rounded_corners td, .rounded_corners th {
+        border: 1px solid white;
+        font-family: Arial;
+        font-size: 10pt;
+        text-align: center;
+        margin: 0;
+    }
+
+    .rounded_corners table table td {
+        border-style: none;
+        margin: 0;
+    }
+
+.ContentDiv {
+    height: 100%;
+}
+
+.ManageUserTextbox {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+.ManageUserSearchTextbox {
+    width: 100% !important;
+    margin-top: 4px;
+}
+
+.ManageUserInsert {
+    background-color: #FFFFFF;
+}
+
+.ManageUsersListView tr {
+    background-color: white;
+    color: #333333;
+    border-bottom: 1px solid #dddddd;
+}
+
+.ManageUsersListView td {
+    text-align: left;
+}
+
+
+.CenterLoginPage {
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+}
+
+
+.ManageUserLabel {
+    width: 100%;
+}
+
+.ManageUsersHeader {
+    text-align: center;
+}
+
+.ManageUsersButton {
+    border: none;
+}
+
+.ManageUsersSearchBar {
+    float: left;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+    .ManageUsersListView th {
+        background-color: #468CC8;
+        height: 35px;
+        color: white;
+    }
+
+    .ManageUsersListView tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .ManageUsersListView tr .btn-primary,
+        .ManageUsersListView tr .btn-danger,
+        .ManageUsersListView tr .btn-success {
+            border: none;
+            margin: 0;
+            width: 80px;
+        }
+
+.ManageUsersFooterBar {
+    background-color: #fff !important;
+    color: black !important;
+}
+
+.ManageUsersFooterButtons {
+    width: 35px !important;
+}
+
+.ManageUsersFooterNextPreviousButtons {
+    width: 70px !important;
+}
+
+
+.ManageUserAddLabel {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.ManageUsersScrollDiv {
+    overflow: auto;
+    width: 100%;
+    height: 100px;
+}
+
+.ManageUsersEmptyItemTemplate {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-color: #999999;
+    border-style: none;
+    border-width: 1px;
+}
+
+.ManageUsersItemTemplate {
+    background-color: #ffffff;
+    color: black;
+}
+
+.ManageUsersLayoutTemplate {
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-color: #999999;
+    border-style: none;
+    border-width: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    min-width: 0px;
+}
+
+.ManageUsersLayoutTemplateTableRow {
+    background-color: #468CC8;
+    color: white;
+}
+
+.ManageUsersPager {
+    text-align: center;
+    background-color: #468CC8;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.ManageUsersSearchHeaders {
+    font-weight: bold;
+}
+
+.ManageUsersSearchBar label {
+    font-weight: normal;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.ManageUsersPagerButtonAlign {
+    text-align: center !important;
+}
+
+.ManageUsersHeaders{
+    font-size:30px;
+}
+
+.ManageUsersTabs{
+    padding-top:2%;
+}
+
+.ManageUsersDropDowns{
+    width:50%;
+}
+
+@media only screen and (min-width:1000px) {
+    .ManageUsersSearchBar{
+        min-width:250px;
+    }
+}
+@media only screen and (min-width:1200px){
+    .ManageUsersSearchBar{
+        min-width:300px;
+    }
+}
